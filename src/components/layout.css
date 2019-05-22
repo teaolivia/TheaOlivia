@@ -16,15 +16,18 @@
     international engineering: #BA2D0B
 */
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700&display=swap');
+
 html {
-  font-family: sans-serif;
+  font-family: 'Montserrat', sans-serif;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   background-color: #FB9985;
 }
 body {
   margin-top: 50px;
-  margin: "3rem auto";
+  height: 100%;
+  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -60,7 +63,7 @@ template {
   display: none;
 }
 a {
-  color: #1A090D;
+  color: none;
   background-color: transparent;
   text-decoration: none;
   text-shadow: none;
@@ -248,16 +251,16 @@ img {
   margin-bottom: 1.45rem;
 }
 h1 {
-  margin-left: 0;
+  margin-left: 1.45rem;
   margin-right: 0;
-  margin-top: 0;
+  margin-top: 1.45rem;
   padding-bottom: 0;
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: #1C3A13;
-  font-family: Work Sans, sans-serif;
+  font-family: Domine, sans-serif;
   font-weight: 600;
   text-rendering: optimizeLegibility;
   font-size: 3.5rem;
@@ -290,7 +293,7 @@ h3 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: #48484A;
-  font-family: Quattrocento Sans;
+  font-family: Montserrat, sans-serif;
   font-weight: 400;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
@@ -382,7 +385,7 @@ ol {
   list-style-image: none;
 }
 dl {
-  font-family: Quattrocento Sans;
+  font-family: Montserrat, sans-serif;
   font-weight: 700;
   margin-left: 0;
   margin-right: 0;
@@ -395,7 +398,7 @@ dl {
   text-decoration: none;
 }
 dd {
-  font-family: Quattrocento Sans;
+  font-family: Montserrat, sans-serif;
   font-weight: 400;
   margin-left: 0;
   margin-right: 0;
@@ -408,7 +411,7 @@ dd {
   text-decoration: none;
 }
 p {
-  font-family: Quattrocento Sans;
+  font-family: Montserrat, sans-serif;
   font-weight: 400;
   color: #48484A;
   margin-left: 0;
@@ -538,14 +541,14 @@ strong {
 }
 dt {
   text-decoration: none;
-  font-family: Work Sans, sans-serif;
+  font-family: Domine, sans-serif;
   /* font-weight: bold; */
 }
 th {
   font-weight: bold;
 }
 li {
-  font-family: Quattrocento Sans;
+  font-family: Montserrat, sans-serif;
   font-weight: 400;
   color: #48484A;
   padding-block: 1.45rem;
@@ -655,29 +658,102 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (min-width: 300px) and (max-width: 900px) {
   html {
     font-size: 100%;
+  }
+  [class*="layout"] {
+    margin: 3em auto auto 5em;
+  }
+
+  .footer-class {
+    display: none;
+  }
+  /* Individual item */
+  .bm-item {
+    display: inline-block;
+
+    /* Our sidebar item styling */
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: #d1d1d1;
+    transition: color 0.2s;
+  }
+
+  /* Change color on hover */
+  .bm-item:hover {
+    color: white;
+  }
+
+  /* The rest copied directly from react-burger-menu docs */
+
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+  }
+
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: #373a47;
+  }
+
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    height: 24px;
+    width: 24px;
+  }
+
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: #bdc3c7;
+  }
+
+  /* General sidebar styles */
+  .bm-menu {
+    background: #373a47;
+    padding: 2.5em 1.5em 0;
+    font-size: 1.15em;
+  }
+
+  /* Morph shape necessary with bubble or elastic */
+  .bm-morph-shape {
+    fill: #373a47;
+  }
+
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: #b8b7ad;
+  }
+
+  /* Styling of overlay */
+  .bm-overlay {
+    background: rgba(0, 0, 0, 0.3);
   }
 }
 
 .hub {
-  width: 50px;
-  height: 50px;
+  max-width: 50px;
+  max-height: 50px;
   padding: 2em;
   margin: 20px;
   box-shadow: #48484A;
 }
 
-.outer-container {
+/* .outer-container {
   display: table;
+  box-sizing: border-box;
 }
 
 .inner-container {
   display: table-cell;
   vertical-align: middle;
-  /* text-align: center; */
-}
+  box-sizing: border-box;
+  /* text-align: center; 
+} */
 
 .container-vertical {
   display: flex;
@@ -695,7 +771,11 @@ pre tt:after {
   overflow: hidden;
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 100%; 
+  height: 100%;
+  vertical-align: baseline; 
+  display: table-cell;
+  box-sizing: border-box; 
 }
 
 .nav-style {
@@ -707,4 +787,53 @@ pre tt:after {
   color: #083D77;
   text-decoration: none;
   font-weight: bold;
+}
+
+#page-wrap {
+  margin: 3em auto;
+  padding: 1em;
+  box-sizing: border-box;
+}
+
+@media (min-width:600px)  { 
+  .main-container {
+    margin: 3em auto;
+  }
+  /* .outer-container {
+    display: table;
+    box-sizing: border-box;
+  }
+  
+  .inner-container {
+    display: table-cell;
+    vertical-align: middle;
+    box-sizing: border-box;
+    /* text-align: center;
+  } */
+}
+
+@media (min-width: 900px) {
+  .sidebar {
+    display: none;
+  }
+
+  .outer-container {
+    display: table;
+    box-sizing: border-box;
+  }
+  
+  .inner-container {
+    display: table-cell;
+    vertical-align: middle;
+    box-sizing: border-box;
+    /* text-align: center; */
+  }
+}
+
+#link a {
+  color: #1A090D;
+}
+
+.sidebar a {
+  color: #FB9985;
 }

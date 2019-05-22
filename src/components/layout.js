@@ -12,6 +12,8 @@ import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import Sidebar from "./sidebar";
+// import { getAutomaticTypeDirectiveNames } from "typescript";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -30,20 +32,21 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <div className="outer-container">
-          <div 
+        <div className="sidebar">
+          <Sidebar /> 
+        </div>
+          <div class="main-container"
             style={{
               display: `table-cell`,
               verticalAlign: `middle`,
-              margin: `auto auto auto auto`,
-              width: 960,
-              height: 700,
-              maxWidth: 960,
+              margin: `3em auto`,
+              maxWidth: `100%`,
+              maxHeight: `100%`,
               padding: `2rem 1.0875rem 0px`,
               paddingTop: 0,
             }}
           >
-            <main>{children}</main>
+            <main style={{maxHeight: `100%`, maxWidth: `75%` }}>{children}</main>
             {/* <footer>
               © {new Date().getFullYear()}, Built with
               {` `}
@@ -51,10 +54,15 @@ const Layout = ({ children }) => (
             </footer> */}
             
           </div>
-          <div style={{position:`absolute`, bottom: 0}} className="inner-container">
+
+        <footer class="footer-class">
+        <div id="page-wrap" style={{height: `100%`, marginBottom: `-50px`}}>
+          <div>
             <Header menuLinks={data.site.siteMetadata.menuLinks} />
-          </div>  
-        </div>  
+          </div> 
+          <div style={{height: `50px`}}></div>
+        </div>
+        </footer>
       </>
     )}
   />

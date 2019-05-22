@@ -28,6 +28,7 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    'gatsby-plugin-offline',
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
@@ -36,8 +37,8 @@ module.exports = {
         name: `gatsby-starter-default`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `transparent`,
-        theme_color: `#663399`,
+        background_color: `#FB9985`,
+        theme_color: `#FB9985`,
         display: `minimal-ui`,
         icon: `src/images/halloween-black-cat.png`, // This path is relative to the root of the site.
       },
@@ -51,6 +52,14 @@ module.exports = {
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Droid Sans', 'Droid Serif']
+        }
+      }
+    }
   ],
 }
