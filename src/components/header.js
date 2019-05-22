@@ -18,7 +18,7 @@ const Header = ({ menuLinks }) => (
                   color: `#ffc98b`
                 }}
                 style = {{
-                  color: `#1C3A13`,
+                  color: `#1A090D`,
                   padding: '2rem',
                   fontFamily: 'Montserrat', 
                   fontWeight: 'Medium', 

@@ -40,13 +40,15 @@ const Layout = ({ children }) => (
               display: `table-cell`,
               verticalAlign: `middle`,
               margin: `3em auto`,
+              marginLeft: `auto`,
+              marginRight: `auto`,
               maxWidth: `100%`,
               maxHeight: `100%`,
               padding: `2rem 1.0875rem 0px`,
               paddingTop: 0,
             }}
           >
-            <main style={{maxHeight: `100%`, maxWidth: `75%` }}>{children}</main>
+            <main style={{maxHeight: `100%`, maxWidth: `100%` }}>{children}</main>
             {/* <footer>
               © {new Date().getFullYear()}, Built with
               {` `}

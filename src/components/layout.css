@@ -17,6 +17,7 @@
 */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,500,500i,600,600i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,500,600,700&display=swap');
 
 html {
   font-family: 'Montserrat', sans-serif;
@@ -30,6 +31,11 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+body::selection {
+  background: #1C3A13;
+  color: #EBEBD3;
+
 }
 article,
 aside,
@@ -76,6 +82,10 @@ a:hover {
   color: #ffc98b;
   /* outline-width: 0; */
   text-decoration: none;
+}
+a::selection {
+  background: #1A090D;
+  color:#EBEBD3;
 }
 abbr[title] {
   border-bottom: none;
@@ -251,20 +261,24 @@ img {
   margin-bottom: 1.45rem;
 }
 h1 {
-  margin-left: 1.45rem;
+  margin-left: 0;
   margin-right: 0;
   margin-top: 1.45rem;
   padding-bottom: 0;
-  padding-left: 0;
+  padding-left: 0.75rem;
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
-  color: #1C3A13;
-  font-family: Domine, sans-serif;
+  color: #1A090D;
+  font-family: Domine;
   font-weight: 600;
   text-rendering: optimizeLegibility;
   font-size: 3.5rem;
   line-height: 1.1;
+}
+h1::selection {
+  background: #1C3A13;
+  color: #EBEBD3;
 }
 h2 {
   margin-left: 0;
@@ -397,6 +411,10 @@ dl {
   margin-bottom: 1.45rem;
   text-decoration: none;
 }
+dl::selection {
+  background: #1A090D;
+  color: #EBEBD3;
+}
 dd {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
@@ -410,6 +428,10 @@ dd {
   margin-bottom: 1.45rem;
   text-decoration: none;
 }
+dd::selection {
+  background: #1A090D;
+  color: #EBEBD3;
+}
 p {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
@@ -422,6 +444,11 @@ p {
   padding-right: 0;
   padding-top: 0;
   margin-bottom: 1.45rem;
+}
+p::selection {
+  background: #1C3A13;
+  color: #EBEBD3;
+
 }
 figure {
   margin-left: 0;
@@ -544,6 +571,10 @@ dt {
   font-family: Domine, sans-serif;
   /* font-weight: bold; */
 }
+dt::selection {
+  background: #1C3A13;
+  color: #EBEBD3;
+}
 th {
   font-weight: bold;
 }
@@ -663,7 +694,10 @@ pre tt:after {
     font-size: 100%;
   }
   [class*="layout"] {
-    margin: 3em auto auto 5em;
+    margin-top: 2rem;
+    margin-bottom: 1.45rem;
+    margin-left: 1.45rem;
+    padding-left: 2rem;
   }
 
   .footer-class {
@@ -789,15 +823,23 @@ pre tt:after {
   font-weight: bold;
 }
 
-#page-wrap {
-  margin: 3em auto;
-  padding: 1em;
-  box-sizing: border-box;
-}
+
 
 @media (min-width:600px)  { 
   .main-container {
+    margin-top: 2rem;
+    margin-left: 1.45rem;
     margin: 3em auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  #page-wrap {
+    padding: 1em; 
+    margin-bottom: 1.45rem; 
+    margin-left: 1.45rem;
+    padding-left: 2rem;
+    box-sizing: border-box;
   }
   /* .outer-container {
     display: table;

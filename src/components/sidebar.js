@@ -2,6 +2,7 @@ import PropTypes from "prop-types"
 import React from "react"
 import { slide as Menu } from 'react-burger-menu'
 import { Link } from "gatsby"
+
 const ListLink = props => (
     <li style={{listStyle: `none`, alignContent: `center`, fontFamily: `Source Sans Pro,sans-serif`, padding: `1em`, color: `#FB9985`}}>
       <Link style={{color: `#FB9985`}} activeStyle={{fontFamily: `Montserrat,sans-serif`, color: `#ffc98b`}} to={props.to}>{props.children}</Link>

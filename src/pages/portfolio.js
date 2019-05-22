@@ -8,7 +8,9 @@ const Portfolio = () => (
   <Layout>
     <SEO title="My Portfolio" />
     <div class="layout">
-      <div style={{padding: `1em`, margin: `3rem auto`}} id="page-wrap">
+      <div style={{padding: `1em`,        
+              marginBottom: `1.45rem`,
+              marginLeft: `1.45rem`,}} id="page-wrap">
         <h1>My Portfolio</h1>
         <p> </p><p> </p>
         <div style={{ padding: `1em`}}>
