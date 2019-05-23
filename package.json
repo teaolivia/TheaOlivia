@@ -27,9 +27,10 @@
     "typography-theme-alton": "^0.16.19"
   },
   "devDependencies": {
+    "eslint": "^5.16.0",
     "gatsby-plugin-typescript": "^2.0.14",
     "gh-pages": "^2.0.1",
-    "prettier": "^1.17.1",
+    "prettier": "1.17.1",
     "ts-pnp": "^1.1.2"
   },
   "keywords": [
