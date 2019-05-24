@@ -50,7 +50,7 @@ const Portfolio = () => (
                 Monopoly Simulation (2015)
               </a>
             </dt> 
-            <dd>A game board up to 4 players similar to Monopoly.Create by <span style={{color: `#083D77`}}><b>C++.</b></span></dd>
+            <dd>A game board up to 4 players similar to Monopoly. Create by <span style={{color: `#083D77`}}><b>C++.</b></span></dd>
 
           </dl>
         </div>
