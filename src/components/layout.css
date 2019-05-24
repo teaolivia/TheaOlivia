@@ -269,7 +269,7 @@ h1 {
   padding-top: 0;
   margin-bottom: 1.45rem;
   color: #1A090D;
-  font-family: Domine;
+  font-family: Montserrat;
   font-weight: 600;
   text-rendering: optimizeLegibility;
   font-size: 3.5rem;
@@ -415,6 +415,7 @@ dl::selection {
   color: #EBEBD3;
 }
 dd {
+  color: #1A090D;
   font-family: Montserrat, sans-serif;
   font-weight: 400;
   margin-left: 0;
@@ -434,7 +435,7 @@ dd::selection {
 p {
   font-family: Montserrat, sans-serif;
   font-weight: 400;
-  color: #48484A;
+  color: #1A090D;
   margin-left: 0;
   margin-right: 0;
   margin-top: 0;
@@ -446,7 +447,7 @@ p {
 }
 p::selection {
   background: #1C3A13;
-  color: #EBEBD3;
+  color: #EAEAEA;
 
 }
 figure {
@@ -567,7 +568,7 @@ strong {
 }
 dt {
   text-decoration: none;
-  font-family: Domine, sans-serif;
+  font-family: Montserrat, sans-serif;
   /* font-weight: bold; */
 }
 dt::selection {
