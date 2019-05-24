@@ -69,7 +69,6 @@ template {
   display: none;
 }
 a {
-  color: none;
   background-color: transparent;
   text-decoration: none;
   text-shadow: none;
@@ -716,7 +715,7 @@ pre tt:after {
 
   /* Change color on hover */
   .bm-item:hover {
-    color: white;
+    color: #ffc98b;
   }
 
   /* The rest copied directly from react-burger-menu docs */
@@ -877,6 +876,10 @@ pre tt:after {
 
 #link a {
   color: #1A090D;
+}
+
+#link a:hover {
+  color: #ffc98b;
 }
 
 .sidebar a {
