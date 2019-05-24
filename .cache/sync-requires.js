@@ -9,7 +9,7 @@ exports.components = {
   "component---src-pages-404-js": hot(preferDefault(require("/Users/theaolivia/projects/personalwebsite/theaolivia/src/pages/404.js"))),
   "component---src-pages-contacts-js": hot(preferDefault(require("/Users/theaolivia/projects/personalwebsite/theaolivia/src/pages/contacts.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/Users/theaolivia/projects/personalwebsite/theaolivia/src/pages/index.js"))),
-  "component---src-pages-portfolio-js": hot(preferDefault(require("/Users/theaolivia/projects/personalwebsite/theaolivia/src/pages/portfolio.js"))),
-  "component---src-pages-resume-js": hot(preferDefault(require("/Users/theaolivia/projects/personalwebsite/theaolivia/src/pages/resume.js")))
+  "component---src-pages-resume-js": hot(preferDefault(require("/Users/theaolivia/projects/personalwebsite/theaolivia/src/pages/resume.js"))),
+  "component---src-pages-portfolio-js": hot(preferDefault(require("/Users/theaolivia/projects/personalwebsite/theaolivia/src/pages/portfolio.js")))
 }
 

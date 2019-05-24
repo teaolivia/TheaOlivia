@@ -855,9 +855,9 @@ pre tt:after {
 }
 
 @media (min-width: 900px) {
-  html {
+  /* html {
     margin: 100%;
-  }
+  } */
   .sidebar {
     display: none;
   }
@@ -871,7 +871,7 @@ pre tt:after {
     display: table-cell;
     vertical-align: middle;
     box-sizing: border-box;
-    /* text-align: center; */
+    /* text-align: center; 
   }
 }
 
