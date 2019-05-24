@@ -871,7 +871,6 @@ pre tt:after {
     display: table-cell;
     vertical-align: middle;
     box-sizing: border-box;
-    /* text-align: center; 
   }
 }
 
