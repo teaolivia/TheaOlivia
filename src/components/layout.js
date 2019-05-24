@@ -32,6 +32,9 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
+          <div class="footer-class">
+            <Header menuLinks={data.site.siteMetadata.menuLinks} />
+          </div> 
         <div className="sidebar">
           <Sidebar /> 
         </div>
@@ -57,14 +60,12 @@ const Layout = ({ children }) => (
             
           </div>
 
-        <footer class="footer-class">
+        {/* <footer class="footer-class">
         <div id="page-wrap" style={{height: `100%`, marginBottom: `-50px`}}>
-          <div>
-            <Header menuLinks={data.site.siteMetadata.menuLinks} />
-          </div> 
+
           <div style={{height: `50px`}}></div>
         </div>
-        </footer>
+        </footer> */}
       </>
     )}
   />

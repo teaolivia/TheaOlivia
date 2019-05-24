@@ -836,6 +836,7 @@ pre tt:after {
 
   #page-wrap {
     padding: 1em; 
+    margin-top: 1.45rem;
     margin-bottom: 1.45rem; 
     margin-left: 1.45rem;
     padding-left: 2rem;

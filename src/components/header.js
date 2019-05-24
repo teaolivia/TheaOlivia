@@ -4,7 +4,11 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ menuLinks }) => (
-  <div id="page-wrap" style={{justifyContent: `center`}}>
+  <div id="page-wrap" style={{
+      justifyContent: `center`, 
+      float:`right`,
+      paddingTop: `0 1.45rem `
+    }}>
       <nav>
         <ul style={{ 
           display: 'flex', 
